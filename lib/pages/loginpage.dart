@@ -26,7 +26,19 @@ class loginpage extends StatelessWidget {
         
 
       ),
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: Container(
+          child: Center(
+            child: Text("MORE OPTIONS",
+            style: TextStyle(
+              fontSize:40,
+              fontWeight: FontWeight.bold,
+              color: Colors.deepOrange
+            ),
+            textScaleFactor: ,),
+          ),
+        ),
+      ),
     );
   }
 }
