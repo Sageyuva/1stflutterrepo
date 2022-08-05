@@ -17,7 +17,16 @@ class homepage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: Center(child: Text("MORE options",
+        style: TextStyle(
+          fontSize: 40,
+          fontWeight: FontWeight.bold,
+          color: Colors.deepOrange
+        ),
+        textScaleFactor: 1.0,)),
+        
+      ),
     );
   }
 }
