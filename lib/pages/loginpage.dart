@@ -35,7 +35,7 @@ class loginpage extends StatelessWidget {
               fontWeight: FontWeight.bold,
               color: Colors.deepOrange
             ),
-            textScaleFactor: ,),
+            textScaleFactor: 1.0,),
           ),
         ),
       ),
