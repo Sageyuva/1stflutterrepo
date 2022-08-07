@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:matcher/matcher.dart';
+import 'package:flutter_application_1/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class loginpage extends StatelessWidget {
@@ -11,7 +12,8 @@ class loginpage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: Colors.white,
-      child: Column(
+      child: SingleChildScrollView(
+        child: Column(
         children: [
           Image.asset("assets/images/login_image.png"),
           SizedBox(
@@ -52,14 +54,16 @@ class loginpage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 20.0,
+            height: 50.0,
           ),
 
           ElevatedButton(
             child: Text("Login"),
-            style: TextButton.styleFrom(),
+            style: TextButton.styleFrom(
+              minimumSize: Size(100,50)
+            ),
             onPressed: (){
-              print("HELLO YUVARAJ");
+              Navigator.pushNamed(context, MyRoutes.homeroute);
             }, ),
           
 
@@ -67,6 +71,7 @@ class loginpage extends StatelessWidget {
           ),
           )
         ],
+      ),
       ),
     );
   }

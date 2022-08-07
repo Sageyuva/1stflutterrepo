@@ -2,6 +2,7 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/home.dart';
 import 'package:flutter_application_1/pages/loginpage.dart';
+import 'package:flutter_application_1/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main(List<String> args) {
@@ -21,7 +22,8 @@ class myapp extends StatelessWidget {
       primarySwatch: Colors.deepPurple),
     routes: {
       "/":(context)=>loginpage(),
-      "/login":(context) => homepage(),
+      MyRoutes.homeroute:(context) => homepage(),
+      MyRoutes.loginroute:(context)=>loginpage(),
     },
     );
   }
