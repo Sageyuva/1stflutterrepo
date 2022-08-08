@@ -73,7 +73,7 @@ bool changebutton = false;
                   
                 });
 
-                await Future.delayed(Duration(seconds: 2));
+                await Future.delayed(Duration(seconds: 1));
                 Navigator.pushNamed(context, MyRoutes.homeroute);
                 
               },
@@ -97,7 +97,7 @@ bool changebutton = false;
                 borderRadius: BorderRadius.circular(changebutton?100: 10),
               ),
              ),
-             )
+             ),
           // ElevatedButton(
           //   child: Text("Login"),
           //   style: TextButton.styleFrom(
@@ -106,7 +106,12 @@ bool changebutton = false;
           //   onPressed: (){
           //     Navigator.pushNamed(context, MyRoutes.homeroute);
           //   }, ),
-          
+          SizedBox(
+            height: 40,
+          ),
+          Container(
+            child:Text("hello everyne") ,
+          ),
 
             ],
           ),
