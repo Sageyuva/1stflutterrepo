@@ -31,34 +31,107 @@ class _regpageState extends State<regpage> {
               color: Colors.deepPurple,
             ),),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
-              ) ,
-            Column(
-              children: [
-                TextFormField(
-                decoration: InputDecoration(
-                  labelText: "FIRST NAME",
-                  labelStyle: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.deepPurple,
+              padding: const EdgeInsets.symmetric(vertical: 50.0, horizontal: 40.0),
+              child: Column(
+                children: [
+                  TextFormField(
+                    decoration: InputDecoration(
+                      labelText: "FIRST NAME",
+                      hintText: "Ex:Yuvaraj",
+                      labelStyle: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.deepPurple,
+                      ),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
+                    ),
                   ),
-                  hintText: "Ex:Yuvaraj",
-                ),
-                ),
-                TextFormField(
-                decoration: InputDecoration(
-                  labelText: "FIRST NAME",
-                  labelStyle: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.deepPurple,
+                  SizedBox(
+                    height: 10,
                   ),
-                  hintText: "Ex:Yuvaraj",
-                ),
-                )
-              ],
-            )
+                  TextFormField(
+                    decoration: InputDecoration(
+                      labelText: "LAST NAME",
+                      hintText: "Ex:Dhammure",
+                      labelStyle: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.deepPurple,
+                      ),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  TextFormField(
+                    decoration: InputDecoration(
+                      labelText: "PHONE NUMBER",
+                      hintText: "Ex:0123456789",
+                      labelStyle: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.deepPurple,
+                      ),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
+                    ),
+                    keyboardType: TextInputType.phone,
+                    maxLength: 10,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  TextFormField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      labelText: "PASSWORD",
+                      labelStyle: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.deepPurple,
+                      ),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
+                    ),
+              
+                  ),
+                  SizedBox(
+                      height: 10,
+                    ),
+                  TextFormField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      labelText: "CONFIRM PASSWORD",
+                      labelStyle: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.deepPurple,
+                      ),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
+                    ),
+                    
+                  )
+                
+                ],
+              ),
+            ),
+            AnimatedContainer(
+              alignment: Alignment.center,
+              height: 50,
+              width: 100,
+              duration:Duration(seconds: 1),
+              child: Text("SIGN UP",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),),
+              decoration: BoxDecoration(
+                color: Color.fromARGB(255, 65, 180, 111),
+                borderRadius:BorderRadius.circular(20),
+              ),
+              ),
+              
+          
         ],
         ),
       )
