@@ -2,6 +2,7 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/home.dart';
 import 'package:flutter_application_1/pages/loginpage.dart';
+import 'package:flutter_application_1/pages/reg.dart';
 import 'package:flutter_application_1/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -22,7 +23,8 @@ class myapp extends StatelessWidget {
      theme: ThemeData(
       primarySwatch: Colors.deepPurple),
     routes: {
-      "/":(context)=>loginpage(),
+      "/":(context)=>regpage(),
+      "/login":(context)=>loginpage(),
       MyRoutes.homeroute:(context) => homepage(),
       MyRoutes.loginroute:(context)=>loginpage(),
     },

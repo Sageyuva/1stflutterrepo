@@ -14,6 +14,7 @@ class loginpage extends StatefulWidget {
 class _loginpageState extends State<loginpage> {
 String name="NAME PLEASE";
 bool changebutton = false;
+bool fb=false;
 
 final _formKey = GlobalKey<FormState>();
 
@@ -32,7 +33,9 @@ final _formKey = GlobalKey<FormState>();
                   setState(() {
                     changebutton=false;
                   });
-                  
+                  setState(() {
+                    fb=true;
+                  });
  }
  }
   @override
@@ -137,10 +140,11 @@ final _formKey = GlobalKey<FormState>();
             //     Navigator.pushNamed(context, MyRoutes.homeroute);
             //   }, ),
             SizedBox(
-              height: 40,
+              height: 10,
             ),
-            Container(
-            ),
+            
+            
+            
 
               ],
             ),
