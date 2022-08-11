@@ -22,9 +22,10 @@ class myapp extends StatelessWidget {
      themeMode: ThemeMode.light,
      theme: ThemeData(
       primarySwatch: Colors.deepPurple),
+      debugShowCheckedModeBanner: false,
     routes: {
-      "/":(context)=>regpage(),
-      "/login":(context)=>loginpage(),
+      "/":(context)=>homepage(),
+      "/reg":(context)=>regpage(),
       MyRoutes.homeroute:(context) => homepage(),
       MyRoutes.loginroute:(context)=>loginpage(),
     },

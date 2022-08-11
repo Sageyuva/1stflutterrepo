@@ -69,7 +69,8 @@ final _formKey = GlobalKey<FormState>();
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Colors.deepPurple,
-                )
+                ),
+                border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
                 
                 
               ),
@@ -84,6 +85,9 @@ final _formKey = GlobalKey<FormState>();
                 return null;
               },
             ),
+            SizedBox(
+              height: 10,
+            ),
             TextFormField(
               obscureText: true,
               decoration: InputDecoration(
@@ -93,7 +97,8 @@ final _formKey = GlobalKey<FormState>();
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Colors.deepPurple,
-                )
+                ),
+                border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
               ),
               validator:(value) {
                 if (value!.isEmpty) {
@@ -139,9 +144,7 @@ final _formKey = GlobalKey<FormState>();
             //   onPressed: (){
             //     Navigator.pushNamed(context, MyRoutes.homeroute);
             //   }, ),
-            SizedBox(
-              height: 10,
-            ),
+           
             
             
             

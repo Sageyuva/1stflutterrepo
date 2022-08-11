@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/utils/routes.dart';
+import 'package:flutter_application_1/widgets/drawer.dart';
 
 
 class homepage extends StatelessWidget {
@@ -18,16 +19,7 @@ class homepage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: Drawer(
-        child: Center(child: Text("MORE options",
-        style: TextStyle(
-          fontSize: 40,
-          fontWeight: FontWeight.bold,
-          color: Colors.deepOrange
-        ),
-        textScaleFactor: 1.0,)),
-        
-      ),
+      drawer: MyDrawer(),
     );
   }
 }
