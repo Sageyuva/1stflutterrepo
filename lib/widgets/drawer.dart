@@ -9,7 +9,7 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final imageurl="https://i.pinimg.com/474x/00/6a/3b/006a3bdcce01d123d83a54390a4be892.jpg";
+    final imageurl="https://i.pinimg.com/474x/3f/ff/58/3fff5832e236da38dc6e9d4dbae0332b.jpg";
     return Drawer(
       child: Container(
         color:Colors.deepPurple,
@@ -32,10 +32,38 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
             ListTile(
-              leading: Icon(CupertinoIcons.home,color: Colors.white,),
-              
-            
-            )
+              textColor: Colors.white,
+              iconColor: Colors.white,
+              leading: Icon(CupertinoIcons.profile_circled),
+              title: Text("Profile",textScaleFactor: 1.5,),
+             ),
+            ListTile(
+              textColor: Colors.white,
+              iconColor: Colors.white,
+              leading: Icon(CupertinoIcons.home,
+              // color: Colors.white,
+              ),
+              title: Text("Home",
+              textScaleFactor: 1.5,
+              // style: TextStyle(
+              //   fontSize: 23,
+              //   fontWeight: FontWeight.bold,
+              //   // color: Colors.white,
+              // ),
+              ),
+             ),
+             ListTile(
+              textColor: Colors.white,
+              iconColor: Colors.white,
+              leading: Icon(CupertinoIcons.phone),
+              title: Text("7975139615",textScaleFactor: 1.5,),
+             ),
+             ListTile(
+              textColor: Colors.white,
+              iconColor: Colors.white,
+              leading: Icon(CupertinoIcons.mail),
+              title: Text("yuvarajdhammure@gmail.com",textScaleFactor: 1.0,),
+             )
           ],
         ),
       ),
