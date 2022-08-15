@@ -4,6 +4,8 @@ import 'package:flutter_application_1/pages/home.dart';
 import 'package:flutter_application_1/pages/loginpage.dart';
 import 'package:flutter_application_1/pages/reg.dart';
 import 'package:flutter_application_1/utils/routes.dart';
+import 'package:flutter_application_1/widgets/drawer.dart';
+import 'package:flutter_application_1/widgets/theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main(List<String> args) {
@@ -20,8 +22,7 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
      themeMode: ThemeMode.light,
-     theme: ThemeData(
-      primarySwatch: Colors.deepPurple),
+     theme: MyTheme.lightTheme(context),
       debugShowCheckedModeBanner: false,
     routes: {
       "/":(context)=>homepage(),

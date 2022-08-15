@@ -10,13 +10,15 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("WELCOME TO FLUTTER"),
+        title: Text("Catalog App"),
       ),
       body: Material(
         child: Container(
-          child: Center(
-            child: Text("hello everyone"),
-          ),
+          alignment: Alignment.center,
+          child: Text("HELLO"),
+          
+            
+          
         ),
       ),
       drawer: MyDrawer(),
