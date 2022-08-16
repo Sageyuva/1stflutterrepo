@@ -10,14 +10,16 @@ class homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // final DummyList = List.generate(5, (index) => CatalogModel.items[0]);
     return Scaffold(
       appBar: AppBar(
         title: Text("Alpha Sage"),
       ),
       body:ListView.builder(
+        padding: EdgeInsets.all(18),
         itemCount: CatalogModel.items.length,
         itemBuilder: (context, index) {
-          return ItemWidget(item: CatalogModel.items[0],);
+          return ItemWidget(item: CatalogModel.items[index],);
         }),
 
       drawer: MyDrawer(),

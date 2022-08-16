@@ -13,7 +13,7 @@ class CatalogModel {
   Item(id: 2,
    name: "Poco x4 pro",
     desc: "Poco x4 pro powered by Qualcomm snapdragon 695 5g processor",
-     price: 20000,
+     price: 200,
       color: "#33505a", 
       image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1OlcdbRMFGJGxpLD8hZPZgObyA0gl8aT21w&usqp=CAU")
